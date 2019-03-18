@@ -25,14 +25,25 @@ header a:hover {
   color: white;
 }
 
+.container.text {
+  text-align: center;
+  margin: 40px auto;
+  border-bottom: 1px solid grey;
+  border-bottom-style: dotted;
+}
+
 .container.info {
   text-align: center;
   margin: 50px auto;
   border-bottom: 1px solid grey;
+  border-bottom-style: dotted;
+  padding-bottom: 30px;
 }
 
 #team-header {
   color: #4750ef;
+  font-family: "Anton", sans-serif;
+  margin-bottom: 0%;
 }
 
 .avatar {
@@ -67,4 +78,20 @@ header a:hover {
 footer {
   background-color: #4750ef;
   color: white;
+  padding: 50px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+}
+
+.social-icons a:hover {
+  color: white;
+  margin-top: -5px;
 }
