@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>Hello Europe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Anton"
       rel="stylesheet"
@@ -13,20 +14,85 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
   </head>
-
   <body>
     <header>
-      <div class="row">
-        <div class="col-2"><a href="about-us.html">About Us</a></div>
-        <div class="col-8"><h1>EXPLORE EUROPE</h1></div>
-        <div class="col-2"><a href="#">Location</a></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"><a href="about-us.html">About Us</a></div>
+          <div class="col-8">
+            <h1><a href="/">EXPLORE EUROPE</a></h1>
+          </div>
+          <div class="col-2"><a href="#">Location</a></div>
+        </div>
       </div>
     </header>
-
-    <div class="row">
-      <div class="col-sm-12 col-md-6">1</div>
-      <div class="col-sm-12 col-md-6">2</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 map-text">
+          <p>You have Explore <span id="c_explored">0</span> out of 36</p>
+          <h3><span id="c_percent">0%</span></h3>
+          <p>Hovering Over :<span id="c_hover">X</span></p>
+        </div>
+        <div class="col-9 map-wrapper">
+          <div class="map-holder">
+            <object id="map" type="image/svg+xml" data="map.svg"></object>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div class="social-icons">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/code-first-girls/"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/codefirstgirls/"
+              >
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://twitter.com/CodeFirstGirls?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              >
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/map.js"></script>
   </body>
 </html>

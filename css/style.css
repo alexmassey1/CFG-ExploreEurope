@@ -18,16 +18,18 @@ header h1 {
 
 header a {
   color: white;
-  font-size: 10px;
+  font-size: 1em;
 }
 
 header a:hover {
   color: white;
+  text-decoration: none;
 }
 
 .container.text {
   text-align: center;
   margin: 40px auto;
+  padding-bottom: 10px;
   border-bottom: 1px solid grey;
   border-bottom-style: dotted;
 }
@@ -42,7 +44,7 @@ header a:hover {
 
 #team-header {
   color: #4750ef;
-  font-family: "Anton", sans-serif;
+  font-family: "Courgette", cursive;
   margin-bottom: 0%;
 }
 
@@ -89,6 +91,8 @@ footer {
 .social-icons a {
   margin: 0 10px;
   color: white;
+  font-size: 50px;
+  transition: 0.2s margin-top;
 }
 
 .social-icons a:hover {
